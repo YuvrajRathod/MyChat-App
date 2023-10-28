@@ -21,13 +21,13 @@ const Container = styled(Box)`
 `
 const QRCode = styled('img')({
     height: 264,
-    width: 264,
-    margin: '50px 0 0 50px'
+    width: 300,
+    margin: '50px 10px 0 150px' //200px -> 50px
 });
 
 const Title = styled(Typography)`
     font-size: 26px;
-    color: #41525D
+    color: #41525D;
     font-weight: 300;
     font-family: inherit;
     margin-bottom: 25px;
@@ -44,7 +44,7 @@ const StyledList = styled(List)`
 
 const dialogStyle = {
     height: '96%',
-    marginTop: '12%',
+    marginTop: '8%',
     width: '70%',
     maxWidth: '100%',
     maxHeight: '100%',
@@ -55,7 +55,7 @@ const dialogStyle = {
 
 const NeedHelp = styled(Typography)`
     font-size: 15px;
-    color: #008069;
+    color: #0074c4;
     font-weight: 100;
 `
 
@@ -82,26 +82,27 @@ const LoginDialog = () => {
         >
             <Components>
                 <Container>
-                    <Title> Use WhatsApp on your Computer</Title>
+                    <Title> Use MyChat WebApp on your Computer</Title>
                     <StyledList>
-                        <ListItem>1. Open WhatsApp on your Phone</ListItem>
-                        <ListItem>2. Tap Menu ⋮ or Setting ⚙ and select Linked Devices </ListItem>
-                        <ListItem>3. Tap on Link a Device</ListItem>
-                        <ListItem>4. Point your phone to this screen to capture the QR code</ListItem>
+                        <ListItem>1. Open MyChat on your Computer.</ListItem>
+                        <ListItem>2. Tap on Gmail Account. </ListItem>
+                        <ListItem>3. Select Gmail Account.</ListItem>
+                        <ListItem>4. Open Your Account on MyChat App and Enjoy it.</ListItem>
                     </StyledList>
                     <br></br><br></br><br></br><br></br>
                     <NeedHelp>Need help to get started?</NeedHelp>
                     
                 </Container>   
                 <Box style={{position: 'relative'}}>
-                    <QRCode src={qrCodeImage} alt="qr code" />
-                    <Box style={{position: 'absolute', top:'50%', transform: 'translateX(25%)'}}>
+                    <QRCode src={qrCodeImage} alt="logo"/>
+                    <Box style={{position: 'relative', top:'10%', transform: 'translateX(37%)'}}> 
                         <GoogleLogin
                             onSuccess={onLoginSuccess}
                             onError={onLoginError}
                         />
                     </Box>
                 </Box> 
+
             </Components>   
         </Dialog>
     )

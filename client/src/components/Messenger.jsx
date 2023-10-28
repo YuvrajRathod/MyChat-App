@@ -16,12 +16,12 @@ const Components = styled(Box)`
 
 const Header = styled(AppBar)`
     height: 125px;
-    background-color: #00A884;
+    background-color: #137DC5;
     boxShadow: none;
  `
  const LoginHeader = styled(AppBar)`
     height: 222px;
-    background-color: #00A884;
+    background-color: #137DC5;
     boxShadow: none;
  ` 
 

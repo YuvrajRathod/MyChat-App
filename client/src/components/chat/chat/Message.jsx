@@ -12,7 +12,7 @@ import { AccountContext } from '../../../context/AccountProvider';
 import { iconPDF } from '../../../constants/data';
 
 const Own = styled(Box)`
-    background: #d9fdd3;
+    background: #a1d9ff;
     max-width: 60%;
     margin-left: auto;
     padding: 5px;
@@ -22,7 +22,7 @@ const Own = styled(Box)`
     word-break: break-word;
 `;
 const Wrapper = styled(Box)`
-    background: #FFFFFF;
+    background: #eeeeee;
     max-width: 60%;
     padding: 5px;
     width: fit-content;

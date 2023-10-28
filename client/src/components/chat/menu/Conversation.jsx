@@ -73,7 +73,9 @@ const Conversation = ({ user }) => {
                     }
                 </Container>
                 <Box>
-                    <Text>{message?.text?.includes('localhost') ? 'media' : message.text}</Text>
+                    <Text>
+                        {message?.text?.includes('localhost') ? 'media' : (message?.text ? message.text.slice(0, 40) : '')}
+                    </Text>
                 </Box>
             </Box>
         </Component>

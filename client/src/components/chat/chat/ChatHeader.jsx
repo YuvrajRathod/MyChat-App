@@ -1,11 +1,18 @@
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import { Box, Typography, styled } from '@mui/material';
 
 import { Search, MoreVert } from '@mui/icons-material';
 import { AccountContext } from '../../../context/AccountProvider';
 
+import { Menu, MenuItem } from '@mui/material';
+
+const MenuOption = styled(MenuItem)`
+    font-size: 14px;
+    padding: 15px 60px 5px 24px;
+    color; #4A4A4A;
+`
 const Header = styled(Box)`
     height: 44px;
     background-color: #ededed;
@@ -46,6 +53,14 @@ const ChatHeader = ({ person }) => {
 
     const { activeUsers } = useContext(AccountContext);
 
+    const [open, setOpen] = useState(null);
+    const handleClose = () => {
+        setOpen(null);
+    }
+    const handClick = (e) => {
+        setOpen(e.currentTarget);
+    }
+
     return (
         <Header>
             <Image src={person.picture} alt="dp" />
@@ -55,7 +70,33 @@ const ChatHeader = ({ person }) => {
             </Box>
             <RightContainer>
                 <Search/>
-                <MoreVert/>
+                <>
+            <MoreVert onClick={handClick}/>
+            <Menu
+                anchorEl={open}
+                keepMounted
+                open={open}
+                onClose={handleClose}
+                getContentAnchorE1={null}
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'center'
+                }}
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right'
+                }}
+            >
+                <MenuOption onClick={handleClose}>Contact Info</MenuOption>
+                <MenuOption onClick={handleClose}>Select Message</MenuOption>
+                <MenuOption onClick={handleClose}>Close Chat</MenuOption>
+                <MenuOption onClick={handleClose}>Mute Notifications</MenuOption>
+                <MenuOption onClick={handleClose}>Clear Chat</MenuOption>
+                <MenuOption onClick={handleClose}>Delete Chat</MenuOption>
+                <MenuOption onClick={handleClose}>Report</MenuOption>
+                <MenuOption onClick={handleClose}>Block</MenuOption>
+            </Menu>
+        </>
             </RightContainer>
         </Header>
     )

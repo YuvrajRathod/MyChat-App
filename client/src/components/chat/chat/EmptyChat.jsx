@@ -17,7 +17,7 @@ const Container = styled(Box)`
 
 const Image = styled('img')({
     width: 400,
-    marginTop: 100
+    marginTop: 20,
 });
 
 
@@ -37,7 +37,7 @@ const SubTitle = styled(Typography)`
 `
 
 const StyledDivider = styled(Divider)`
-    margin: 40px 0;
+    margin: 20px 0;
     opacity: 0.6;
 `
 
@@ -47,11 +47,11 @@ const EmptyChat = () => {
         <Component>
             <Container>
                 <Image src={emptyChatImage} alt="image" />
-                <Title>WhatsApp Web</Title>
-                <SubTitle>Now send and receive messages without keeping your phone online.</SubTitle>
-                <SubTitle>Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</SubTitle>
+                <Title>MyChat App</Title>
+                <SubTitle>Now send and receive messages with MyChat App.</SubTitle>
+                <SubTitle>Use MyChat on Multiple linked devices at the same time.</SubTitle>
                 <StyledDivider/>
-                <SubTitle>Make calls from desktop with WhatsApp for Windows. Get it here.</SubTitle>
+                <SubTitle>Send Documents from desktop with MyChat App. Get it here.</SubTitle>
             </Container>
         </Component>
     )   
