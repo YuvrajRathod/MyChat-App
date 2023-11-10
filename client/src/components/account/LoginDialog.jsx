@@ -21,17 +21,17 @@ const Container = styled(Box)`
     padding: 56px 0 56px 56px;
 `
 const QRCode = styled('img')({
-    height: 264,
-    width: 300,
-    margin: '50px 10px 0 250px' //200px -> 50px
+    height: 300,
+    width: 350,
+    margin: '20px 10px 0 200px' //200px -> 50px
 });
 
 const Title = styled(Typography)`
     font-size: 26px;
     color: #41525D;
-    font-weight: 300;
+    font-weight: 700;
     font-family: inherit;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 `
 const StyledList = styled(List)`
     & > li {
@@ -39,7 +39,8 @@ const StyledList = styled(List)`
         margin-top: 15px;
         font-size: 18px;
         line-height: 28px;
-        color: #3B4A54
+        color: #3B4A54;
+        font-weight: 600;
     }
 `
 
@@ -52,13 +53,14 @@ const dialogStyle = {
     maxHeight: '100%',
     boxShadow: 'none',
     overflow: 'hidden',
-    backgroundColor: 'none'
+    backgroundColor: 'none',
+    borderRadius: 5
 }
 
 const NeedHelp = styled(Typography)`
     font-size: 15px;
     color: #0074c4;
-    font-weight: 100;
+    font-weight: 900;
 `
 
 
@@ -91,12 +93,12 @@ const LoginDialog = () => {
                         <ListItem>3. Select Gmail Account.</ListItem>
                         <ListItem>4. Open Your Account on MyChat App and Enjoy it.</ListItem>
                     </StyledList>
-                    <br></br><br></br><br></br><br></br><br></br><br></br>
+                    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                     <NeedHelp>Need help to get started?</NeedHelp>
                 </Container>   
                 <Box style={{position: 'relative'}}>
                     <QRCode src={qrCodeImage} alt="logo"/>
-                    <Box style={{position: 'relative', top:'19%', transform: 'translateX(50%)'}}> 
+                    <Box style={{position: 'relative', top:'19%', transform: 'translateX(47%)'}}> 
                         <GoogleLogin
                             onSuccess={onLoginSuccess}
                             onError={onLoginError}

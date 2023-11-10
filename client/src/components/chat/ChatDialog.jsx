@@ -24,12 +24,12 @@ const RightComponent = styled(Box)`
 `;
 
 const dialogStyle = {
-    height: '97%',
-    width: '100%',
+    height: '95%',
+    width: '95%',
     margin: '20px',
     maxWidth: '100%',
     maxHeight: '100%',
-    borderRadius: 0,
+    borderRadius: 3,
     boxShadow: 'none',
     overflow: 'hidden',
 };

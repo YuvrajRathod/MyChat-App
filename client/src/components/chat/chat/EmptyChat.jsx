@@ -17,16 +17,14 @@ const Container = styled(Box)`
 
 const Image = styled('img')({
     width: 400,
-    marginTop: 20,
+    marginTop: 100,
 });
 
 
 const Title = styled(Typography)`
     font-size: 32px;
-    margin: 25px 0 10px 0;
-    font-family: inherit;
-    font-weightL 300;
-    color: #41525d;
+    margin: 35px 0 10px 0;
+    color: #137dc5;
     
 `
 const SubTitle = styled(Typography)`
@@ -38,7 +36,7 @@ const SubTitle = styled(Typography)`
 
 const StyledDivider = styled(Divider)`
     margin: 20px 0;
-    opacity: 0.6;
+    opacity: 1;
 `
 
 const EmptyChat = () => {

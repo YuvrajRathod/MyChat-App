@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 
-import { Box, styled } from '@mui/material';
+import { Box, Typography, styled } from '@mui/material';
 import { Chat as MessageIcon } from '@mui/icons-material';
 
 import { AccountContext } from '../../../context/AccountProvider';
@@ -30,7 +30,13 @@ const Wrapper = styled(Box)`
         margin-top: 3px;
     }
 `
-
+const Title = styled(Typography)`
+    font-size: 35px;
+    font-weight: 900;
+    margin: 12px 0 10px 75px;
+    color: #137dc5;
+    
+`
 
 const Image = styled('img')({
     height: 40,
@@ -52,6 +58,7 @@ const  Header = () => {
         <>
             <Component>
                 <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()}/>
+                <Title>MyChat App</Title>
                 <Wrapper>
                     <MessageIcon />
                     <HeaderMenu setOpenDrawer={setOpenDrawer}/>
