@@ -43,9 +43,9 @@ const StyledList = styled(List)`
 `
 
 const dialogStyle = {
-    height: '96%',
-    marginTop: '8%',
-    marginBottom: '8%',
+    height: '90%',
+    marginTop: '10%',
+    marginBottom: '10%',
     width: '70%',
     maxWidth: '100%',
     maxHeight: '100%',
