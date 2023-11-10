@@ -23,7 +23,7 @@ const Image = styled('img')({
 
 const Title = styled(Typography)`
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 35px 0 10px 0;
     color: #137dc5;
     
@@ -46,9 +46,9 @@ const EmptyChat = () => {
         <Component>
             <Container>
                 <Image src={emptyChatImage} alt="image" />
-                <br />
+                <br /><br /><br />
                 <Title>Created by YUVRAJ RATHOD</Title>
-                <br /><br />
+                <br />
                 <SubTitle>Now send and receive messages with MyChat App.</SubTitle>
                 <SubTitle>Use MyChat on Multiple linked devices at the same time.</SubTitle>
                 <StyledDivider/>
