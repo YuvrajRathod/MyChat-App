@@ -14,7 +14,8 @@ import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from 'jwt-decode';
 
 const Components = styled(Box)`
-    display: flex
+    margin-top: 12%;
+    display: flex;
 `
 const Container = styled(Box)`
     padding: 56px 0 56px 56px;
@@ -22,7 +23,7 @@ const Container = styled(Box)`
 const QRCode = styled('img')({
     height: 264,
     width: 300,
-    margin: '50px 10px 0 150px' //200px -> 50px
+    margin: '50px 10px 0 250px' //200px -> 50px
 });
 
 const Title = styled(Typography)`
@@ -90,13 +91,12 @@ const LoginDialog = () => {
                         <ListItem>3. Select Gmail Account.</ListItem>
                         <ListItem>4. Open Your Account on MyChat App and Enjoy it.</ListItem>
                     </StyledList>
-                    <br></br><br></br><br></br><br></br>
+                    <br></br><br></br><br></br><br></br><br></br><br></br>
                     <NeedHelp>Need help to get started?</NeedHelp>
-                    
                 </Container>   
                 <Box style={{position: 'relative'}}>
                     <QRCode src={qrCodeImage} alt="logo"/>
-                    <Box style={{position: 'relative', top:'10%', transform: 'translateX(37%)'}}> 
+                    <Box style={{position: 'relative', top:'19%', transform: 'translateX(50%)'}}> 
                         <GoogleLogin
                             onSuccess={onLoginSuccess}
                             onError={onLoginError}
