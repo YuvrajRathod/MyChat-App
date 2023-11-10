@@ -57,12 +57,15 @@ const dialogStyle = {
     borderRadius: 5
 }
 
-const NeedHelp = styled(Typography)`
-    font-size: 15px;
+const Creater = styled(Typography)`
+    font-size: 20px;
     color: #0074c4;
     font-weight: 900;
 `
-
+const Contact = styled(Typography)`
+    font-size: 15px;
+    font-weight: 400;
+`
 
 const LoginDialog = () => {    
 
@@ -94,11 +97,14 @@ const LoginDialog = () => {
                         <ListItem>4. Open Your Account on MyChat App and Enjoy it.</ListItem>
                     </StyledList>
                     <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-                    <NeedHelp>Need help to get started?</NeedHelp>
+                    <Creater>Created by YUVRAJ RATHOD</Creater>
+                    <br />
+                    <Contact>Phone: +91 9926587480</Contact>
+                    <Contact>Email: yuvrajsanjayrathod@gmail.com</Contact>
                 </Container>   
-                <Box style={{position: 'relative'}}>
+                <Box style={{position: 'relative' }}>
                     <QRCode src={qrCodeImage} alt="logo"/>
-                    <Box style={{position: 'relative', top:'19%', transform: 'translateX(47%)'}}> 
+                    <Box style={{position: 'relative', top:'18%', transform: 'translateX(47%)'}}> 
                         <GoogleLogin
                             onSuccess={onLoginSuccess}
                             onError={onLoginError}
