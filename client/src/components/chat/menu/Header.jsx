@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 
 import { Box, Typography, styled } from '@mui/material';
-import { Chat as MessageIcon } from '@mui/icons-material';
+//import { Chat as MessageIcon } from '@mui/icons-material';
 
 import { AccountContext } from '../../../context/AccountProvider';
 
@@ -31,9 +31,9 @@ const Wrapper = styled(Box)`
     }
 `
 const Title = styled(Typography)`
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
-    margin: 12px 0 10px 75px;
+    margin: 12px 0 10px 100px;
     color: #137dc5;
     
 `
@@ -60,7 +60,7 @@ const  Header = () => {
                 <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()}/>
                 <Title>MyChat App</Title>
                 <Wrapper>
-                    <MessageIcon />
+                    {/* <MessageIcon/> */}
                     <HeaderMenu setOpenDrawer={setOpenDrawer}/>
                 </Wrapper>
             </Component>

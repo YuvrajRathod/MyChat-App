@@ -25,6 +25,7 @@ const Search = styled(Box)`
     background-color: #FFFFFF;
     border-radius: 18px;
     width: calc(94% - 100px);
+    padding: 0 15px;
 `;
 
 const InputField = styled(InputBase)`
@@ -45,7 +46,7 @@ const Footer = ({ sendText, setValue, value, file, setFile, setImage }) => {
 
     useEffect(() => {
         const getImage = async () => {
-            if (file) {
+            if(file) {
                 const data = new FormData();
                 data.append("name", file.name);
                 data.append("file", file);
@@ -56,7 +57,7 @@ const Footer = ({ sendText, setValue, value, file, setFile, setImage }) => {
         }
         
         getImage();
-    }, [file])
+    }, [file, setImage])
 
     const onFileChange = (e) => {
         setFile(e.target.files[0]);

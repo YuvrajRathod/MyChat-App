@@ -22,6 +22,11 @@ const HeaderMenu = ({ setOpenDrawer }) => {
     const handClick = (e) => {
         setOpen(e.currentTarget);
     }
+    
+    const handleLogout = () => {
+        handleClose();
+        window.location.reload();
+    };
 
     return  (
         <>
@@ -45,7 +50,7 @@ const HeaderMenu = ({ setOpenDrawer }) => {
                 <MenuOption onClick={handleClose}>New Chat</MenuOption>
                 <MenuOption onClick={handleClose}>Starred messages</MenuOption>
                 <MenuOption onClick={() => {handleClose(); setOpenDrawer(true); }}>Settings</MenuOption>
-                <MenuOption onClick={handleClose}>Log out</MenuOption>
+                <MenuOption onClick={handleLogout}>Log out</MenuOption>
             </Menu>
         </>
     )
