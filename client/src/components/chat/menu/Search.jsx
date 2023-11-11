@@ -22,14 +22,14 @@ const Wrapper = styled(Box)`
 const Icon = styled(Box)`
     position: absolute;
     height: 100%;
-    padding: 6px 10px;
+    padding: 6px 10px 0 20px;
     color: #919191;
 `;
 
 const InputField = styled(InputBase)`
     width: 100%;
     padding: 16px;
-    padding-left: 65px;
+    padding-left: 60px;
     height: 15px;
     font-size: 14px;
 `;
@@ -45,7 +45,7 @@ const Search = ({ setText }) => {
                     />
                 </Icon>
                 <InputField
-                    placeholder='Search or start a new chat'
+                    placeholder='Search '
                     onChange={(e) => setText(e.target.value)}
                 />
             </Wrapper>

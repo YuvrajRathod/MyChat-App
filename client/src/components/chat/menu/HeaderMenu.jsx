@@ -42,8 +42,7 @@ const HeaderMenu = ({ setOpenDrawer }) => {
                 }}
             >
                 <MenuOption onClick={() => {handleClose(); setOpenDrawer(true); }}>Profile</MenuOption>
-                <MenuOption onClick={handleClose}>New group</MenuOption>
-                <MenuOption onClick={handleClose}>Archived</MenuOption>
+                <MenuOption onClick={handleClose}>New Chat</MenuOption>
                 <MenuOption onClick={handleClose}>Starred messages</MenuOption>
                 <MenuOption onClick={() => {handleClose(); setOpenDrawer(true); }}>Settings</MenuOption>
                 <MenuOption onClick={handleClose}>Log out</MenuOption>
