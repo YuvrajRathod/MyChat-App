@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "yuvraj",
+  "author": "YuVrAj",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",

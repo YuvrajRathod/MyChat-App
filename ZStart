@@ -1,0 +1,6 @@
+Atlast to campass
+1 line change in server/database/db.js and server/utils/upload.js
+
+client npm start
+server npm start
+socket npm start

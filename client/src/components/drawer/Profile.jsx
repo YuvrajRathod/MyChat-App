@@ -60,7 +60,7 @@ const Profile = () => {
             </DescriptionContainer>
             <BoxWrapper>
                 <Typography>About</Typography>
-                <Typography>🚩🚩संकट कटै मिटै सब पीरा, जो सुमिरै हनुमत बलबीरा।।🚩🚩</Typography>
+                <Typography>Hello I am MyChat User.</Typography>
             </BoxWrapper>
         </>
     )

@@ -23,7 +23,7 @@ const getUser = (userId) => {
 };
 
 io.on('connection', (socket) => {
-    console.log('User connected');
+    console.log('User Connected');
 
     socket.on("addUsers", userData => {
         addUser(userData, socket.id);
@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
         if (user) {
             io.to(user.socketId).emit('getMessage', data);
         } else {
-            console.log('User not found'); // You might want to handle this case appropriately
+            console.log('User Not Found'); // You might want to handle this case appropriately
         }
     });
 });

@@ -24,7 +24,8 @@ const ChatBox = () => {
             setConversation(data);
         }
         getConversationDetails();
-    }, [person.sub]);
+    }, [person.sub, account.sub]); 
+    // accout.sub add kiya h upr wali line me
 
     return (
         <Box style={{ height: '75%'}}>
